@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("../node_modules/primeng/resources/themes/nova-light/theme.css");
+@import url("../node_modules/primeng/resources/primeng.min.css");
+@import url("../node_modules/primeicons/primeicons.css");
+
+.homepageText{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 30px;
+font-weight: bolder;
+}
+
+.categoryText{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  }
+
+.generalText{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.greybackground{
+  background-color: #eee;
+}
+
+.dot {
+  /* // background-color: rgb(81, 151, 236);
+  //background-color:  #0277BD; */
+  margin:auto;
+  border-radius: 50%;
+  font-family: 'Helvetica','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+
+}
+
+
+.dot-xlarge{
+  height: 130px;
+  width:130px;
+  font-size:xx-large;
+}
+
+.dot-large{
+  height: 100px;
+  width:100px;
+  font-size:40px;
+}
+/* //60 by 60 large.userprofilecontrol check */
+.dot-medium{
+  height: 50px;
+  width:50px;
+  font-size:22px;
+}
+
+.dot-small{
+  height: 20px;
+  width:20px;
+  font-size:0.7rem;
+  }
+

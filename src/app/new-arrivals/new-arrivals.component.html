@@ -1,0 +1,20 @@
+<div class="mb-4">
+    <div class="text-center homepageText p-4">New Arrivals</div>
+    <div class="card-deck generalText">
+        <div class="card" *ngFor="let product of products">
+            <a>
+             <img [src]= "product._ImagePath" alt="{{product._Name}}"  class="card-img-top" height="300">
+             <div class="card-body">
+                <!-- <p-rating name="basic"[(ngModel)]="rate"></p-rating> -->
+                <star-rating value="5" checkedcolor="red" uncheckedcolor="black" size="24px"    readonly="false" (rate)="onRate($event)"></star-rating>
+              <div class="card-text">{{product._Name}}</div>
+              <div class="card-text">{{product._Price}}</div>
+             </div>
+            </a>
+          </div>
+
+    </div>
+    <a routerLink="/products"><div class="btn btn-primary">More Products</div></a>
+
+
+</div>
