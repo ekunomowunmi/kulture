@@ -24,6 +24,8 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { NewArrivalsComponent } from './new-arrivals/new-arrivals.component';
 import { CarouselpageComponent } from './carouselpage/carouselpage.component';
+import { ReviewsService } from './reviews/reviews.service';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,8 @@ import { CarouselpageComponent } from './carouselpage/carouselpage.component';
     ProductDetailComponent,
     WhatWeDoComponent,
     NewArrivalsComponent,
-    CarouselpageComponent
+    CarouselpageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,7 @@ import { CarouselpageComponent } from './carouselpage/carouselpage.component';
     HttpClientModule,
     TextareaAutosizeModule
   ],
-  providers: [ProductService],
+  providers: [ProductService,ReviewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
