@@ -1,0 +1,28 @@
+<h3>Reviews</h3>
+<p-carousel [value]="reviews" numVisible="4">
+
+  <ng-template let-review pTemplate="review" class="card-deck">
+
+    <div class="card" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-6">
+             <star-rating value="{{review.rate}}" checkedcolor="green" uncheckedcolor="black" size="15px"    readonly="false" (rate)="onRate($event)"></star-rating>
+          </div>
+          <div class="col-md-6">
+               <p>{{review.date | date}}</p>
+          </div>
+        </div>
+      </div>
+          <div class="card-body">
+             <!-- <p-rating name="basic"[(ngModel)]="rate"></p-rating> -->
+             <div class="card-title">{{review.Title}}</div>
+           <div class="card-text">{{review.reviewMessage}}</div>
+          </div>
+          <div class="card-footer">
+            <div class="card-text">{{review.name}}</div>
+          </div>
+
+       </div>
+  </ng-template>
+</p-carousel>
